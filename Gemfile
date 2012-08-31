@@ -3,11 +3,12 @@ HOST_OS = RbConfig::CONFIG['host_os']
 source 'http://ruby.taobao.org'
 
 gem 'rails', git: 'git://github.com/rails/rails.git'
-gem 'active_record_deprecated_finders', git: 'git://github.com/rails/active_record_deprecated_finders.git'
+gem 'activerecord-deprecated_finders', git: 'git://github.com/rails/activerecord-deprecated_finders.git'
 gem 'strong_parameters'
 gem 'mysql2'
 
 group :assets do
+  gem 'journey', git: 'git://github.com/rails/journey.git'
   gem 'sass-rails',  git: 'git://github.com/rails/sass-rails.git'
   gem 'coffee-rails', git: 'git://github.com/rails/coffee-rails.git'
   gem 'uglifier', '~> 1.2.4'
